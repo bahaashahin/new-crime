@@ -8,10 +8,7 @@ function Mubahith2() {
       dir="rtl"
     >
       {/* HERO SECTION */}
-      <HeroSection
-        title="دور الإدارة العامة لمباحث الأموال العامة في التصدي لجريمة الأموال العامة"
-        background={HeroImg1} // ممكن تحط صورة لو تحب
-      />
+      <HeroSection />
 
       {/* المبحث */}
       <section className="max-w-6xl mx-auto px-6 py-12 space-y-8">

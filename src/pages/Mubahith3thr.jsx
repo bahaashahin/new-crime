@@ -9,8 +9,6 @@ function Mubahith3() {
     >
       {/* HERO SECTION */}
       <HeroSection
-        title="كيفية إجراء التحريات وجمع المعلومات في قضايا الأموال العامة"
-        background={HeroImg1} // ممكن تحط صورة لو تحب
       />
 
       {/* المبحث: مطالب المبحث الثالث */}

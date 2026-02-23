@@ -8,10 +8,7 @@ function Mubahith4() {
       dir="rtl"
     >
       {/* HERO SECTION */}
-      <HeroSection
-        title="استعراض القضايا المستحدثة والاختلاسات المالية والمصرفية عبر الإنترنت"
-        background={HeroImg1} // ممكن تحط صورة لو تحب
-      />
+      <HeroSection />
 
       {/* المبحث: مطالب المبحث الرابع */}
       <section className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-1 gap-6">

@@ -40,6 +40,7 @@ export default function VideoSection({ video, title, label }) {
             {/* Label يظهر عند hover */}
             {label && (
               <div
+                dir="rtl"
                 className="
       absolute bottom-6 left-1/2 -translate-x-1/2
       pointer-events-none
@@ -51,12 +52,13 @@ export default function VideoSection({ video, title, label }) {
               >
                 {/* جسم الليبل */}
                 <div
+                  dir="rtl"
                   className="
         relative px-6 py-3
         rounded-xl
         bg-gradient-to-r from-blue-600/80 via-cyan-500/70 to-blue-700/80
         backdrop-blur-xl
-        text-white text-sm font-semibold tracking-wide
+        text-white text-sm font-semibold tracking-wide 
         shadow-[0_0_30px_rgba(56,189,248,0.35)]
         border border-white/20
       "
