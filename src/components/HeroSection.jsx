@@ -1,22 +1,36 @@
 import React, { useState } from "react";
-
-function HeroSection({ title, video, background }) {
+import Logo from "../assets/logo.webp";
+import vedback from "../assets/videos/vedback.mp4";
+export default function HeroSection({ title, video }) {
   const [videoOpen, setVideoOpen] = useState(false);
 
   return (
-    <section
-      className="relative w-full h-[400px] sm:h-[600px] lg:h-screen bg-cover bg-center flex flex-col justify-end items-center"
-      style={{ backgroundImage: `url(${background})` }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
+    <section className="relative w-full h-[400px] sm:h-[600px] lg:h-screen flex flex-col justify-end items-center overflow-hidden">
+      {/* الفيديو كخلفية */}
+      
+        <video
+          src={vedback} // ← الآن الفيديو ديناميك حسب props
+          autoPlay
+          loop
+          muted
+          className="absolute top-0 left-0 w-full h-full object-cover"
+        />
+    
 
-      {/* العنوان */}
-      <h1 className="absolute top-1/2 transform -translate-y-1/2 text-center text-4xl md:text-6xl font-bold text-white z-10 px-6 text-[clamp(1rem,2.5vw,2rem)] font-bold">
-        {title}
-      </h1>
+      {/* Overlay خفيف لتوضيح النص */}
+      <div className="absolute inset-0 bg-black/20"></div>
 
-      {/* الزر أسفل القسم */}
+      {/* اللوجو فوق الخلفية */}
+      {/* <img src={Logo} alt="Logo" className="relative w-40 h-40 z-10" /> */}
+
+      {/* العنوان الديناميك */}
+      {title && (
+        <h1 className="absolute top-1/2 transform -translate-y-1/2 text-center text-4xl md:text-6xl font-bold text-white z-10 px-6 text-[clamp(1rem,2.5vw,2rem)]">
+          {title}
+        </h1>
+      )}
+
+      {/* زر الفيديو الديناميك */}
       {video && (
         <button
           onClick={() => setVideoOpen(true)}
@@ -26,7 +40,7 @@ function HeroSection({ title, video, background }) {
         </button>
       )}
 
-      {/* فيديو Modal */}
+      {/* فيديو Modal لو ضغط الزر */}
       {videoOpen && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-[9999] px-4">
           <div className="relative w-full max-w-3xl">
@@ -37,7 +51,7 @@ function HeroSection({ title, video, background }) {
               ×
             </button>
             <video
-              src={video}
+              src={video} // ← نفس الفيديو الديناميك
               controls
               autoPlay
               className="w-full aspect-video rounded-lg"
@@ -48,5 +62,3 @@ function HeroSection({ title, video, background }) {
     </section>
   );
 }
-
-export default HeroSection;
