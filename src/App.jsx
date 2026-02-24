@@ -77,7 +77,7 @@ function App() {
       () => {
         setLoggedIn(false); // انتهاء الجلسة بعد 15 دقيقة
       },
-      15 * 60 * 1000,
+      3 * 60 * 60 * 1000,
     );
     return () => clearTimeout(timer);
   }, [loggedIn]);
