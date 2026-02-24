@@ -3,11 +3,12 @@ import HeroImg1 from "../assets/herosec.png";
 import MatalbCard from "../components/MatalbCard";
 import mbhsfour from "../assets/videos/mbhsfour.mp4";
 import QuranAyah from "../components/QuranAyah";
+import ModalVideo from "../components/ModalVideo";
 import VedSection from "../components/VideoSection";
 function Mubahith4() {
   return (
     <div
-      className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 min-h-screen text-white"
+      className="min-h-screen text-white"
       dir="rtl"
     >
       {/* HERO SECTION */}
@@ -34,10 +35,7 @@ function Mubahith4() {
           انتشارها وأثرها القانوني ودور الدولة والمجتمع في بناء منظومة وقاية
           وردع فعّالة ومستدامة.
         </p>
-
-        <VedSection
-          video={mbhsfour}
-        />
+        <ModalVideo src={mbhsfour} label="تطور الجرائم الماليه عبر شبكان الانتر نت " />
 
         {/* المطلب الأول */}
         <MatalbCard

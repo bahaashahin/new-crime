@@ -14,7 +14,7 @@ import QuranAyah from "../components/QuranAyah";
 function Mubahith2() {
   return (
     <div
-      className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 min-h-screen text-white"
+      className="min-h-screen text-white"
       dir="rtl"
     >
       {/* HERO SECTION */}

@@ -5,7 +5,7 @@ export default function ModalVideo({ src, label }) {
   const [playing, setPlaying] = useState(false);
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto group">
+    <div className="relative w-full max-w-3xl mx-auto mb-10 group">
       {playing ? (
         <video
           src={src}

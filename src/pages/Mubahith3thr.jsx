@@ -12,7 +12,7 @@ import { image } from "framer-motion/client";
 function Mubahith3() {
   return (
     <div
-      className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 min-h-screen text-white"
+      className="min-h-screen text-white"
       dir="rtl"
     >
       {/* HERO SECTION */}

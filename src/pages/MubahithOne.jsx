@@ -7,10 +7,12 @@ import vedmb2 from "../assets/videos/vedmb2.mp4";
 import VedSection from "../components/VideoSection";
 import CardWithVideo from "../components/CardWithVideo";
 import ScrollReveal from "../components/ScrollReveal";
+import ModalVideo from "../components/ModalVideo";
+
 function Mubahith1() {
   return (
     <div
-      className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 min-h-screen text-white"
+      className=" text-white"
       dir="rtl"
     >
       {/* HERO SECTION */}
@@ -42,7 +44,6 @@ function Mubahith1() {
             }
             video={vedmb1}
             labelOne={`غسيل الأموال`}
-            ayahText={`﴿ وَلَا تَأْكُلُوا أَمْوَالَ النَّاسِ بِالْبَاطِلِ وَتُدْلُوا بِهَا إِلَى الْحُكَّامِ﴾`}
           />
 
           {/* كارد 2 */}
@@ -58,7 +59,6 @@ function Mubahith1() {
             }
             video={vedmb2}
             labelOne={`الرقابه الادارية`}
-            ayahText={`﴿ وَلَا تَأْكُلُوا أَمْوَالَ النَّاسِ بِالْبَاطِلِ وَتُدْلُوا بِهَا إِلَى الْحُكَّامِ﴾`}
           />
 
           {/* كارد 3 */}
@@ -71,7 +71,6 @@ function Mubahith1() {
                 ومعنوياً بتقويض الثقة في الجهاز الإداري.
               </p>
             }
-            ayahText={`﴿ إِنَّ اللّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَى أَهْلِهَا﴾`}
           />
 
           {/* كارد 4 */}
@@ -84,7 +83,6 @@ function Mubahith1() {
                 المسؤولين للإفصاح المالي الدوري.
               </p>
             }
-            ayahText={`﴿ وَلَا تَأْكُلُوا أَمْوَالَكُم بَيْنَكُم بِالْبَاطِلِ﴾`}
           />
 
           {/* كارد 5 */}
@@ -97,7 +95,6 @@ function Mubahith1() {
                 الاقتصادي.
               </p>
             }
-            ayahText={`﴿ وَلَا تَأْكُلُوا أَمْوَالَ النَّاسِ بِالْبَاطِلِ﴾`}
           />
 
           {/* كارد 6 */}
@@ -109,7 +106,6 @@ function Mubahith1() {
                 والوثائق بقصد الاستخدام الاحتيالي، يمس نزاهة المنظومة القانونية.
               </p>
             }
-            ayahText={`﴿ وَأَحْلِلُوا بَيْنَكُمْ أَمْوَالَكُم بِالْبَاطِلِ﴾`}
           />
 
           {/* كارد 7 */}
@@ -122,7 +118,6 @@ function Mubahith1() {
                 وتعاون بين البنوك وأجهزة الأمن.
               </p>
             }
-            ayahText={`﴿ وَأَن تَكُونُوا عَلَى أَمْوَالِكُم بِالْعَدْلِ﴾`}
           />
         </ScrollReveal>
       </section>

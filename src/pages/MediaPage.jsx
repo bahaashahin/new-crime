@@ -48,7 +48,7 @@ function MediaPage() {
     <>
       <HeroSection />
 
-      <div className="p-10 bg-gradient-to-b from-black to-gray-800 text-white min-h-screen">
+      <div className="p-10 text-white min-h-screen">
         <h1 className="text-3xl mb-10 text-center">فيديوهات وصور</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
