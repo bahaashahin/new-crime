@@ -4,7 +4,12 @@ import HeroImg1 from "../assets/herosec.png";
 import CardWithVideo from "../components/CardWithVideo";
 import VedSection from "../components/VideoSection";
 import Video1 from "../assets/videos/ved1.mp4";
+import vedmb1 from "../assets/videos/vedmb1.mp4";
+import vedmb2 from "../assets/videos/vedmb2.mp4";
+import wehd from "../assets/videos/wehd.mp4";
 import MatalbCard from "../components/MatalbCard";
+import kasb from "../assets/kasb.jpeg";
+
 function Mubahith2() {
   return (
     <div
@@ -30,6 +35,8 @@ function Mubahith2() {
                 "تختص بالتحري في جرائم الاختلاس والرشوة والكسب غير المشروع وغسل الأموال، وضبط مرتكبيها وتقديمهم للنيابة العامة. تمتد صلاحياتها لتشمل التحقيق في الجرائم الإلكترونية المالية والتنسيق مع وحدة الاشتباه بالبنك المركزي ومكافحة تمويل الإرهاب.",
             },
           ]}
+          video={vedmb2}
+          labelOne={`الرقابه الادارية`}
           ayahText={`بسم الله الرحمن الرحيم
 
             ﴿ وَلَا تَأْكُلُوا أَمْوَالَ النَّاسِ بِالْبَاطِلِ وَتُدْلُوا بِهَا إِلَى الْحُكَّامِ﴾`}
@@ -71,11 +78,14 @@ function Mubahith2() {
               title: "أولاً: جهاز الكسب غير المشروع",
               content:
                 "يتولى الجهاز مراجعة الذمم المالية للمسؤولين والتحقق من مطابقة ثرواتهم لدخولهم المشروعة المُعلنة. أسفرت جهوده عن إحالة عدد من المسؤولين للمحاكمة واسترداد أموال منهوبة ضُخّت مجدداً في خزينة الدولة.",
+              image: kasb, // صورة من assets أو public
+              label: "الصورة التوضيحية",
             },
             {
               title: "ثانياً: وحدة الاشتباه وغسل الأموال ومكافحة تمويل الإرهاب",
               content:
                 "ترصد الوحدة العمليات المالية المشبوهة وتحللها للكشف عن شبكات غسيل الأموال وقطع التمويل عن الجماعات الإرهابية. تعمل بالتنسيق مع البنك المركزي والمؤسسات المالية وتتشارك المعلومات مع الوحدات الدولية المناظرة عبر اتفاقيات التعاون.",
+            video: wehd,
             },
           ]}
           ayahText={`بسم الله الرحمن الرحيم
@@ -89,9 +99,9 @@ function Mubahith2() {
 
 export default Mubahith2;
 
-          // VideoComponent={() => (
-          //   <VedSection
-          //     video={Video1}
-          //     label="الرئيس يتحدث عن تعزيز الأمن وحماية البلاد"
-          //   />
-          // )}
+// VideoComponent={() => (
+//   <VedSection
+//     video={Video1}
+//     label="الرئيس يتحدث عن تعزيز الأمن وحماية البلاد"
+//   />
+// )}

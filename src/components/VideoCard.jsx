@@ -13,7 +13,7 @@ export default function VideoCard({ videoSrc, title, label, onPlay }) {
         loop
         playsInline
         preload="metadata"
-        className="w-full h-full object-cover pointer-events-none"
+        className="block w-full h-full max-w-full max-h-full object-contain"
       />
 
       {/* Overlay */}

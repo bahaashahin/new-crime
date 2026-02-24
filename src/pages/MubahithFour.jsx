@@ -1,7 +1,6 @@
 import HeroSection from "../components/HeroSection";
 import HeroImg1 from "../assets/herosec.png";
 import MatalbCard from "../components/MatalbCard";
-
 function Mubahith4() {
   return (
     <div
@@ -71,6 +70,7 @@ function Mubahith4() {
               title: "أولاً: جهاز الكسب غير المشروع",
               content:
                 "يتولى الجهاز مراجعة الذمم المالية للمسؤولين والتحقق من مطابقة ثرواتهم لدخولهم المشروعة المُعلنة. أسفرت جهوده عن إحالة عدد من المسؤولين للمحاكمة واسترداد أموال منهوبة ضُخّت مجدداً في خزينة الدولة.",
+              
             },
             {
               title: "ثانياً: وحدة الاشتباه وغسل الأموال ومكافحة تمويل الإرهاب",

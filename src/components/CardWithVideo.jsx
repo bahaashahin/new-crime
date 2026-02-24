@@ -3,8 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaChevronDown } from "react-icons/fa";
 import VedSection from "./VideoSection";
 import QuranAyah from "./QuranAyah";
+import ModalVideo from "./ModalVideo";
 
-const CardWithVideo = ({ title, description, VideoComponent, ayahText }) => {
+const CardWithVideo = ({ title, description, video, ayahText, labelOne}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -75,8 +76,9 @@ const CardWithVideo = ({ title, description, VideoComponent, ayahText }) => {
                   exit={{ y: 30, opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <div className="aspect-video w-full max-h-[70vh] overflow-hidden rounded-lg">
-                    <VideoComponent />
+                  <div className="relative w-full max-w-3xl max-h-[70vh] overflow-hidden rounded-xl flex items-center justify-center bg-black">
+                    {" "}
+                    {video && <ModalVideo src={video} label={labelOne} />}{" "}
                   </div>
                 </motion.div>
               </motion.div>
