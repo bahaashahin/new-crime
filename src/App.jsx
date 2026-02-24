@@ -87,7 +87,6 @@ function App() {
   return (
     <div className="bg-gradient-to-b from-black via-[#033b5c] to-[#05568d] min-h-screen text-white">
       <Navbar />
-      <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/MubahithOne" element={<Mubahith1 />} />

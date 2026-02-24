@@ -1,10 +1,10 @@
-import HeroSection from "../components/HeroSection";
-import VedSection from "../components/VideoSection";
-import QuranAyah from "../components/QuranAyah";
 import { Link } from "react-router-dom";
+import HeroSection from "../components/HeroSection";
+import QuranAyah from "../components/QuranAyah";
 import Video1 from "../assets/videos/ved1.mp4";
+import VedSection from "../components/VideoSection";
 import HeroImg1 from "../assets/herosec.png";
-
+import ScrollReveal from "../components/ScrollReveal";
 function Home() {
   const mubahith = [
     {
@@ -41,19 +41,24 @@ function Home() {
         dir="rtl"
         className="py-20 px-6 bg-gradient-to-br from-black via-gray-900 to-blue-950 min-h-screen"
       >
-        <h2 className="text-3xl sm:text-8xl md:text-4xl  text-center mb-12 font-bold text-white z-10 px-6">
+        <h2 className="text-3xl md:text-4xl  text-center mb-12 font-bold text-white z-10 px-6">
           التحريات الجنائية في مكافحة الأموال العامة
         </h2>
         <QuranAyah
-          text="﴿ إِنَّ اللَّهَ يَأْمُرُكُمْ أَنْ تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا وَإِذَا حَكَمْتُمْ بَيْنَ النَّاسِ أَنْ تَحْكُمُوا بِالْعَدْلِ ﴾"
+          text={`بسم الله الرحمن الرحيم
+
+            ﴿ إِنَّ اللَّهَ يَأْمُرُكُمْ أَنْ تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا وَإِذَا حَكَمْتُمْ بَيْنَ النَّاسِ أَنْ تَحْكُمُوا بِالْعَدْلِ ﴾`}
           speed={45}
           className="mt-20 max-w-5xl mx-auto px-6"
         />
-        <VedSection video={Video1} label="اضغط لتشغيل الفيديو" />
-        <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          مباحث جرائم الأموال العامة
-        </h3>
-
+        <VedSection
+          video={Video1}
+          label="الرئيس يتحدث عن تعزيز الأمن وحماية البلاد"
+        />
+        <ScrollReveal direction="right" delay={0.2}>
+          <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            مباحث جرائم الأموال العامة
+          </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {mubahith.map((item, index) => (
             <Link
@@ -89,6 +94,7 @@ function Home() {
             </Link>
           ))}
         </div>
+        </ScrollReveal>
       </section>
     </>
   );

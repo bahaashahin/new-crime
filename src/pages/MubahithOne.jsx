@@ -1,6 +1,10 @@
 import HeroSection from "../components/HeroSection";
 import HeroImg1 from "../assets/herosec.png";
-
+import QuranAyah from "../components/QuranAyah";
+import Video1 from "../assets/videos/ved1.mp4";
+import VedSection from "../components/VideoSection";
+import CardWithVideo from "../components/CardWithVideo";
+import ScrollReveal from "../components/ScrollReveal";
 function Mubahith1() {
   return (
     <div
@@ -9,106 +13,154 @@ function Mubahith1() {
     >
       {/* HERO SECTION */}
       <HeroSection />
-
       {/* المبحث: 7 كروت */}
       <section className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
-        {/* كارد 1 */}
-        <div className="flex bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-          <div className="w-2 bg-gradient-to-b from-purple-500 via-pink-500 to-red-500"></div>
-          <div className="p-6 flex-1 space-y-2">
-            <h3 className="text-xl font-bold">أولاً: غسل الأموال</h3>
-            <p className="text-gray-200 leading-relaxed">
-              غسل الأموال هو إخفاء المصدر غير المشروع للأموال المتحصلة من أنشطة
-              إجرامية وإعادة ضخها في المنظومة الاقتصادية الرسمية. يمر بثلاث
-              مراحل: الإيداع والتمويه والإدماج، ويُعدّ من أشد الجرائم خطورة
-              لارتباطه بتمويل الإرهاب.
-            </p>
-          </div>
-        </div>
+        <ScrollReveal direction="left" delay={0}>
+          <h2 className="text-3xl md:text-4xl  text-center font-bold text-white z-10 px-6">
+            التعريف بجرائم الأموال العامة{" "}
+           </h2>
+          <QuranAyah
+            text={`بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
 
-        {/* كارد 2 */}
-        <div className="flex bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-          <div className="w-2 bg-gradient-to-b from-purple-500 via-pink-500 to-red-500"></div>
-          <div className="p-6 flex-1 space-y-2">
-            <h3 className="text-xl font-bold">
-              ثانياً: الرشوة واستغلال النفوذ
-            </h3>
-            <p className="text-gray-200 leading-relaxed">
-              الرشوة هي تقديم أو قبول عطايا لحمل موظف عام على الإخلال بواجبات
-              وظيفته، أما استغلال النفوذ فهو توظيف الجاه والسلطة لتحقيق منافع
-              شخصية. تُفضي هذه الجرائم إلى إفساد منظومة العدالة وإهدار المال
-              العام.
-            </p>
-          </div>
-        </div>
+﴿ وَلَا تَأْكُلُوا أَمْوَالَ النَّاسِ بِالْبَاطِلِ وَتُدْلُوا بِهَا إِلَى الْحُكَّامِ﴾`}
+            speed={45}
+            className="mt-20 max-w-5xl mx-auto px-6 whitespace-pre-line text-right"
+          />
 
-        {/* كارد 3 */}
-        <div className="flex bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-          <div className="w-2 bg-gradient-to-b from-purple-500 via-pink-500 to-red-500"></div>
-          <div className="p-6 flex-1 space-y-2">
-            <h3 className="text-xl font-bold">
-              ثالثاً: الاختلاس والإضرار بالمال العام
-            </h3>
-            <p className="text-gray-200 leading-relaxed">
-              الاختلاس هو استيلاء الموظف على أموال أو ممتلكات عامة وُجدت في
-              حيازته لحساب نفسه أو لحساب غيره. يُلحق ضرراً مزدوجاً: ماديّاً
-              ومعنوياً بتقويض الثقة في الجهاز الإداري.
-            </p>
-          </div>
-        </div>
+          {/* كارد 1 */}
+          <CardWithVideo
+            title="أولاً: غسل الأموال"
+            description={
+              <p>
+                غسل الأموال هو إخفاء المصدر غير المشروع للأموال المتحصلة من
+                أنشطة إجرامية وإعادة ضخها في المنظومة الاقتصادية الرسمية. يمر
+                بثلاث مراحل: الإيداع والتمويه والإدماج، ويُعدّ من أشد الجرائم
+                خطورة لارتباطه بتمويل الإرهاب.
+              </p>
+            }
+            VideoComponent={() => (
+              <VedSection
+                video={Video1}
+                label="الرئيس يتحدث عن تعزيز الأمن وحماية البلاد"
+              />
+            )}
+            ayahText={`﴿ وَلَا تَأْكُلُوا أَمْوَالَ النَّاسِ بِالْبَاطِلِ وَتُدْلُوا بِهَا إِلَى الْحُكَّامِ﴾`}
+          />
 
-        {/* كارد 4 */}
-        <div className="flex bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-          <div className="w-2 bg-gradient-to-b from-purple-500 via-pink-500 to-red-500"></div>
-          <div className="p-6 flex-1 space-y-2">
-            <h3 className="text-xl font-bold">رابعاً: الكسب غير المشروع</h3>
-            <p className="text-gray-200 leading-relaxed">
-              ازدياد ثروة الموظف العام أو ذويه زيادةً لا يستطيع تبريرها من مصادر
-              مشروعة. يُشكّل مؤشراً كاشفاً للفساد الإداري ويستوجب إخضاع
-              المسؤولين للإفصاح المالي الدوري.
-            </p>
-          </div>
-        </div>
+          {/* كارد 2 */}
+          <CardWithVideo
+            title="ثانياً: الرشوة واستغلال النفوذ"
+            description={
+              <p>
+                الرشوة هي تقديم أو قبول عطايا لحمل موظف عام على الإخلال بواجبات
+                وظيفته، أما استغلال النفوذ فهو توظيف الجاه والسلطة لتحقيق منافع
+                شخصية. تُفضي هذه الجرائم إلى إفساد منظومة العدالة وإهدار المال
+                العام.
+              </p>
+            }
+            VideoComponent={() => (
+              <VedSection
+                video={Video1}
+                label="الرئيس يتحدث عن تعزيز الأمن وحماية البلاد"
+              />
+            )}
+            ayahText={`﴿ وَلَا تَأْكُلُوا أَمْوَالَ النَّاسِ بِالْبَاطِلِ وَتُدْلُوا بِهَا إِلَى الْحُكَّامِ﴾`}
+          />
 
-        {/* كارد 5 */}
-        <div className="flex bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-          <div className="w-2 bg-gradient-to-b from-purple-500 via-pink-500 to-red-500"></div>
-          <div className="p-6 flex-1 space-y-2">
-            <h3 className="text-xl font-bold">خامساً: النقد والتهريب</h3>
-            <p className="text-gray-200 leading-relaxed">
-              تهريب النقد والبضائع عبر المنافذ الحدودية يستهدف التحايل على
-              الرقابة الجمركية وإخفاء عائدات الأنشطة الإجرامية ويهدد الاستقرار
-              الاقتصادي.
-            </p>
-          </div>
-        </div>
+          {/* كارد 3 */}
+          <CardWithVideo
+            title="ثالثاً: الاختلاس والإضرار بالمال العام"
+            description={
+              <p>
+                الاختلاس هو استيلاء الموظف على أموال أو ممتلكات عامة وُجدت في
+                حيازته لحساب نفسه أو لحساب غيره. يُلحق ضرراً مزدوجاً: ماديّاً
+                ومعنوياً بتقويض الثقة في الجهاز الإداري.
+              </p>
+            }
+            VideoComponent={() => (
+              <VedSection
+                video={Video1}
+                label="الرئيس يتحدث عن تعزيز الأمن وحماية البلاد"
+              />
+            )}
+            ayahText={`﴿ إِنَّ اللّهَ يَأْمُرُكُمْ أَن تُؤَدُّوا الْأَمَانَاتِ إِلَى أَهْلِهَا﴾`}
+          />
 
-        {/* كارد 6 */}
-        <div className="flex bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-          <div className="w-2 bg-gradient-to-b from-purple-500 via-pink-500 to-red-500"></div>
-          <div className="p-6 flex-1 space-y-2">
-            <h3 className="text-xl font-bold">سادساً: التزييف والتزوير</h3>
-            <p className="text-gray-200 leading-relaxed">
-              التزييف يشمل العملة الرسمية، والتزوير يشمل تحريف المستندات
-              والوثائق بقصد الاستخدام الاحتيالي، يمس نزاهة المنظومة القانونية.
-            </p>
-          </div>
-        </div>
+          {/* كارد 4 */}
+          <CardWithVideo
+            title="رابعاً: الكسب غير المشروع"
+            description={
+              <p>
+                ازدياد ثروة الموظف العام أو ذويه زيادةً لا يستطيع تبريرها من
+                مصادر مشروعة. يُشكّل مؤشراً كاشفاً للفساد الإداري ويستوجب إخضاع
+                المسؤولين للإفصاح المالي الدوري.
+              </p>
+            }
+            VideoComponent={() => (
+              <VedSection
+                video={Video1}
+                label="الرئيس يتحدث عن تعزيز الأمن وحماية البلاد"
+              />
+            )}
+            ayahText={`﴿ وَلَا تَأْكُلُوا أَمْوَالَكُم بَيْنَكُم بِالْبَاطِلِ﴾`}
+          />
 
-        {/* كارد 7 */}
-        <div className="flex bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
-          <div className="w-2 bg-gradient-to-b from-purple-500 via-pink-500 to-red-500"></div>
-          <div className="p-6 flex-1 space-y-2">
-            <h3 className="text-xl font-bold">
-              سابعاً: الجرائم المصرفية المستحدثة
-            </h3>
-            <p className="text-gray-200 leading-relaxed">
-              تشمل الاحتيال الإلكتروني وسرقة البيانات المصرفية واستغلال الثغرات
-              التقنية في أنظمة الدفع الرقمي. تستوجب تطوير آليات رقابية وتعاون
-              بين البنوك وأجهزة الأمن.
-            </p>
-          </div>
-        </div>
+          {/* كارد 5 */}
+          <CardWithVideo
+            title="خامساً: النقد والتهريب"
+            description={
+              <p>
+                تهريب النقد والبضائع عبر المنافذ الحدودية يستهدف التحايل على
+                الرقابة الجمركية وإخفاء عائدات الأنشطة الإجرامية ويهدد الاستقرار
+                الاقتصادي.
+              </p>
+            }
+            VideoComponent={() => (
+              <VedSection
+                video={Video1}
+                label="الرئيس يتحدث عن تعزيز الأمن وحماية البلاد"
+              />
+            )}
+            ayahText={`﴿ وَلَا تَأْكُلُوا أَمْوَالَ النَّاسِ بِالْبَاطِلِ﴾`}
+          />
+
+          {/* كارد 6 */}
+          <CardWithVideo
+            title="سادساً: التزييف والتزوير"
+            description={
+              <p>
+                التزييف يشمل العملة الرسمية، والتزوير يشمل تحريف المستندات
+                والوثائق بقصد الاستخدام الاحتيالي، يمس نزاهة المنظومة القانونية.
+              </p>
+            }
+            VideoComponent={() => (
+              <VedSection
+                video={Video1}
+                label="الرئيس يتحدث عن تعزيز الأمن وحماية البلاد"
+              />
+            )}
+            ayahText={`﴿ وَأَحْلِلُوا بَيْنَكُمْ أَمْوَالَكُم بِالْبَاطِلِ﴾`}
+          />
+
+          {/* كارد 7 */}
+          <CardWithVideo
+            title="سابعاً: الجرائم المصرفية المستحدثة"
+            description={
+              <p>
+                تشمل الاحتيال الإلكتروني وسرقة البيانات المصرفية واستغلال
+                الثغرات التقنية في أنظمة الدفع الرقمي. تستوجب تطوير آليات رقابية
+                وتعاون بين البنوك وأجهزة الأمن.
+              </p>
+            }
+            ayahText={`﴿ وَأَن تَكُونُوا عَلَى أَمْوَالِكُم بِالْعَدْلِ﴾`}
+            VideoComponent={() => (
+              <VedSection
+                video={Video1}
+                label="الرئيس يتحدث عن تعزيز الأمن وحماية البلاد"
+              />
+            )}
+          />
+        </ScrollReveal>
       </section>
     </div>
   );

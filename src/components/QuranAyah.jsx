@@ -33,7 +33,7 @@ export default function QuranAyah({
 
   return (
     <div className={`text-center font-quran text-white ${className}`}>
-      <p className="text-2xl md:text-3xl lg:text-4xl leading-loose drop-shadow-lg">
+      <p className="text-2xl md:text-3xl lg:text-4xl leading-loose drop-shadow-lg text-center">
         {displayedText}
         <span className="animate-pulse">|</span>
       </p>
