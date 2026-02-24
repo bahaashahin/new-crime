@@ -2,6 +2,8 @@ import HeroSection from "../components/HeroSection";
 import HeroImg1 from "../assets/herosec.png";
 import QuranAyah from "../components/QuranAyah";
 import Video1 from "../assets/videos/ved1.mp4";
+import vedmb1 from "../assets/videos/vedmb1.mp4";
+import vedmb2 from "../assets/videos/vedmb2.mp4";
 import VedSection from "../components/VideoSection";
 import CardWithVideo from "../components/CardWithVideo";
 import ScrollReveal from "../components/ScrollReveal";
@@ -18,7 +20,7 @@ function Mubahith1() {
         <ScrollReveal direction="left" delay={0}>
           <h2 className="text-3xl md:text-4xl  text-center font-bold text-white z-10 px-6">
             التعريف بجرائم الأموال العامة{" "}
-           </h2>
+          </h2>
           <QuranAyah
             text={`بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
 
@@ -40,7 +42,7 @@ function Mubahith1() {
             }
             VideoComponent={() => (
               <VedSection
-                video={Video1}
+                video={vedmb1}
                 label="الرئيس يتحدث عن تعزيز الأمن وحماية البلاد"
               />
             )}
@@ -60,7 +62,7 @@ function Mubahith1() {
             }
             VideoComponent={() => (
               <VedSection
-                video={Video1}
+                video={vedmb2}
                 label="الرئيس يتحدث عن تعزيز الأمن وحماية البلاد"
               />
             )}
