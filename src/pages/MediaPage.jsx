@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import HeroSection from "../components/HeroSection";
 import VideoCard from "../components/VideoCard";
-
+import vedmb2 from "../assets/videos/vedmb2.mp4";
 import HeroImg1 from "../assets/herosec.png";
 import img1 from "../assets/img1.webp";
 import img2 from "../assets/img2.webp";
 import img3 from "../assets/img3.webp";
-
-import Video1 from "../assets/videos/ved1.mp4";
+import vedmb1 from "../assets/videos/vedmb1.mp4";
+import kasb from "../assets/kasb.jpeg";
+import wehd from "../assets/videos/wehd.mp4";
 import Video2 from "../assets/videos/ved2.mp4";
 import Video3 from "../assets/videos/ved3.mp4";
+import mbhsimg from "../assets/mbhsimg.jpeg";
+import tahary from "../assets/videos/tahary.mp4";
+import mbhsfour from "../assets/videos/mbhsfour.mp4";
 
 function MediaPage() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -25,6 +29,13 @@ function MediaPage() {
         "الاداره العامه لمكافحة جرائم الاموال العامة تتمكن من ضبط تشكيل عصابي بالاسكندرية",
     },
     {
+      id: 2,
+      type: "video",
+      src: vedmb1,
+      title: "فيديو 2",
+      label: "غسيل الاموال",
+    },
+    {
       id: 3,
       type: "video",
       src: Video3,
@@ -36,6 +47,50 @@ function MediaPage() {
       type: "image",
       src: img1,
       title: "صورة 1",
+    },
+    {
+      id: 5,
+      type: "video",
+      src: vedmb2,
+      title: "الرشوه واستغلال النفوذ",
+      label: "الرشوه واستغلال النفوذ",
+    },
+    {
+      id: 6,
+      type: "image",
+      src: kasb,
+      title: "الكسب الغير مشروع",
+    },
+    {
+      id: 7,
+      type: "video",
+      src: wehd,
+      title: "وحدة الاشتباه وغسل الاموال ومكافحة تمويل الارهاب",
+      label: "وحدة الاشتباه وغسل الاموال ومكافحة تمويل الارهاب",
+    },
+    {
+      id: 8,
+      type: "video",
+      src: tahary,
+      title:
+        "كيفية اجراء التحريات وجمع المعلومات فى قضايا الأموال العامة و استعراض نماذج لبعض القضايا و كذا أساليب التحرى و المواجهه الأمنية",
+      label:
+        "كيفية اجراء التحريات وجمع المعلومات فى قضايا الأموال العامة و استعراض نماذج لبعض القضايا و كذا أساليب التحرى و المواجهه الأمنية",
+    },
+    {
+      id: 9,
+      type: "image",
+      src: mbhsimg,
+      title: "صور جرائم الأعتداء",
+    },
+    {
+      id: 10,
+      type: "video",
+      src: mbhsfour,
+      title:
+        "استعراض لبعض القضايا المستحدثة و الاختلاسات الماليه و المصرفية عبر شبكه الانترنت",
+      label:
+        " استعراض لبعض القضايا المستحدثة و الاختلاسات الماليه و المصرفية عبر شبكه الانترنت",
     },
   ];
 

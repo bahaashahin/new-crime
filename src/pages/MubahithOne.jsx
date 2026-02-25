@@ -17,7 +17,6 @@ function Mubahith1() {
     >
       {/* HERO SECTION */}
       <HeroSection />
-      {/* المبحث: 7 كروت */}
       <section className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
         <ScrollReveal direction="left" delay={0}>
           <h2 className="text-3xl md:text-4xl  text-center font-bold text-white z-10 px-6">
