@@ -4,8 +4,8 @@ import MatalbCard from "../components/MatalbCard";
 import mbhsfour from "../assets/videos/mbhsfour.mp4";
 import QuranAyah from "../components/QuranAyah";
 import ModalVideo from "../components/ModalVideo";
-import Ahdaa from "../components/Ahdaa";
 import VedSection from "../components/VideoSection";
+import SummaryRecommendationsAndConclusion from "../components/SummaryRecommendationsAndConclusion";
 function Mubahith4() {
   return (
     <div
@@ -121,7 +121,7 @@ function Mubahith4() {
             },
           ]}
         />
-        <Ahdaa />
+        <SummaryRecommendationsAndConclusion/>
       </section>
     </div>
   );

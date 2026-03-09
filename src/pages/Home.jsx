@@ -8,6 +8,9 @@ import ScrollReveal from "../components/ScrollReveal";
 import ModalVideo from "../components/ModalVideo";
 import mbhsfour from "../assets/videos/mbhsfour.mp4";
 import Buttton from "../components/Buttton";
+import Ahdaa from "../components/Ahdaa";
+
+
 function Home() {
   const mubahith = [
     {
@@ -49,6 +52,7 @@ function Home() {
             speed={45}
             className="mt-20 mb-20 max-w-5xl mx-auto px-6"
           />
+          <Ahdaa />
           <h2 className="text-3xl font-bold text-center mb-6 text-white-900">
             شكر وتقدير
           </h2>
@@ -101,7 +105,7 @@ function Home() {
             نبراسًا وسندًا للباحثين وطلاب العلم.
           </p>
           <ModalVideo src={Video1} label="تشغيل الفيديو" />
-          <Buttton/>
+          <Buttton />
 
           {/* <ScrollReveal direction="right" delay={0.2}> */}
           <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">
