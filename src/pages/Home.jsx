@@ -9,6 +9,7 @@ import ModalVideo from "../components/ModalVideo";
 import mbhsfour from "../assets/videos/mbhsfour.mp4";
 import Buttton from "../components/Buttton";
 import Ahdaa from "../components/Ahdaa";
+import ShokrImg from "../assets/shokr.png";
 
 
 function Home() {
@@ -56,6 +57,11 @@ function Home() {
           <h2 className="text-3xl font-bold text-center mb-6 text-white-900">
             شكر وتقدير
           </h2>
+          <img
+            src={ShokrImg}
+            alt="شكر وتقدير"
+            className="mx-auto my-8 max-w-full md:max-w-2xl rounded-xl shadow-lg"
+          />
 
           <p className="text-lg mb-6 text-justify">
             يتقدم الباحثون بخالص الشكر والتقدير إلى السادة القائمين على مناقشة
