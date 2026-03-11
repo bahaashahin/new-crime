@@ -9,7 +9,7 @@ import ModalVideo from "../components/ModalVideo";
 import mbhsfour from "../assets/videos/mbhsfour.mp4";
 import Buttton from "../components/Buttton";
 import Ahdaa from "../components/Ahdaa";
-import ShokrImg from "../assets/shokr.png";
+import ShokrImg from "../assets/shokr.jpg";
 
 
 function Home() {
